@@ -2,57 +2,292 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:text="Chọn mô hình ở đây"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
     <View
-        android:layout_width="20px"
-        android:layout_height="20px">
+        android:layout_width="40px"
+        android:layout_height="40px">
     </View>
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="731dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="30px"
+                    android:layout_height="50px">
+                </View>
+
+                <Button
+                    android:id="@+id/nhasan"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/house_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Nhà sàn"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="40px"
+                    android:layout_height="40px">
+
+                </View>
+                <Button
+                    android:id="@+id/trongdong"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/music_note_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Trống đồng"
+                    android:textStyle="bold"
+                    />
+                <View
+                    android:layout_width="40px"
+                    android:layout_height="15px">
+
+                </View>
+                <Button
+                    android:id="@+id/nonla"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/star_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Nón lá"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
 
             <View
-                android:layout_width="50px"
-                android:layout_height="50px">
+                android:layout_width="0px"
+                android:layout_height="40px">
+
             </View>
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:drawableLeft="@android:drawable/ic_search_category_default"
-                android:text="Trong"></Button>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="30px"
+                    android:layout_height="50px">
+                </View>
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/music_note_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Nhà sàn"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="40px"
+                    android:layout_height="20px">
+
+                </View>
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/music_note_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Trống đồng"
+                    android:textStyle="bold"
+                    />
+                <View
+                    android:layout_width="40px"
+                    android:layout_height="15px">
+
+                </View>
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/music_note_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Nhà sàn"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
             <View
-                android:layout_width="20px"
-                android:layout_height="20px">
+                android:layout_width="0px"
+                android:layout_height="40px">
 
             </View>
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="113.8dp"
-                android:layout_height="120dp"
-                android:text="Trong"></Button>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="30px"
+                    android:layout_height="50px">
+                </View>
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/music_note_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Nhà sàn"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="40px"
+                    android:layout_height="40px">
+
+                </View>
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/music_note_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Trống đồng"
+                    android:textStyle="bold"
+                    />
+                <View
+                    android:layout_width="40px"
+                    android:layout_height="15px">
+
+                </View>
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/music_note_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Nhà sàn"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
             <View
-                android:layout_width="20px"
-                android:layout_height="15px">
+                android:layout_width="0px"
+                android:layout_height="40px">
 
             </View>
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:text="Trong"></Button>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="30px"
+                    android:layout_height="50px">
+                </View>
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/music_note_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Nhà sàn"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="40px"
+                    android:layout_height="20px">
+
+                </View>
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/music_note_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Trống đồng"
+                    android:textStyle="bold"
+                    />
+                <View
+                    android:layout_width="40px"
+                    android:layout_height="15px">
+
+                </View>
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/music_note_48dp_fill0_wght400_grad0_opsz48"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="Nhà sàn"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
 
         </LinearLayout>
-
 
     </ScrollView>
 
