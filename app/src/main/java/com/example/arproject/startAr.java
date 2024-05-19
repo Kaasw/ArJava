@@ -53,6 +53,7 @@ public class startAr extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ar_activity);
+        getSupportActionBar().hide();
 
         Intent intent = getIntent();
         url = intent.getStringExtra("url");

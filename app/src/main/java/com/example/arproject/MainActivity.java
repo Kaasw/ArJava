@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentOnAttachListener;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.ar.core.Anchor;
 import com.google.ar.core.Config;
 import com.google.ar.core.HitResult;
@@ -39,7 +40,8 @@ import java.lang.ref.WeakReference;
 
 public class MainActivity extends AppCompatActivity
 {
-    private Button trong, non, nha;
+    private Button trong, non, nha, thuyen, gui, begailao, namlao;
+    private FloatingActionButton quitbutton;
     private TextView textView;
     private ScrollView scrollView;
 
@@ -53,6 +55,11 @@ public class MainActivity extends AppCompatActivity
         trong = findViewById(R.id.trongdong);
         nha = findViewById(R.id.nhasan);
         non = findViewById(R.id.nonla);
+        thuyen = findViewById(R.id.thuyen);
+        gui = findViewById(R.id.gui);
+        begailao = findViewById(R.id.trangphuclao);
+        namlao = findViewById(R.id.tpnamlao);
+        quitbutton = findViewById(R.id.quitbutton);
         nha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,6 +86,43 @@ public class MainActivity extends AppCompatActivity
                 view.getContext().startActivity(intent);
             }
         });
+
+        thuyen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), startAr.class);
+                intent.putExtra("url", "https://firebasestorage.googleapis.com/v0/b/network-c34fb.appspot.com/o/thuyen.glb?alt=media&token=38892c60-666b-4ae4-a4c6-88c75204159d");
+                view.getContext().startActivity(intent);
+            }
+        });
+
+        gui.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), startAr.class);
+                intent.putExtra("url", "https://firebasestorage.googleapis.com/v0/b/network-c34fb.appspot.com/o/gui.glb?alt=media&token=80ed10ea-9086-4fb9-a201-62f82866ba36");
+                view.getContext().startActivity(intent);
+            }
+        });
+
+        begailao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), startAr.class);
+                intent.putExtra("url", "https://firebasestorage.googleapis.com/v0/b/network-c34fb.appspot.com/o/trang_phuc_be_gai_dan_toc_lao.glb?alt=media&token=6c680b28-59aa-4d73-aa5f-b8e4811e17d8");
+                view.getContext().startActivity(intent);
+            }
+        });
+
+        quitbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+
+
         
     }
 }

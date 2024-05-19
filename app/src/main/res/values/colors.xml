@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="button">#5cbb6c</color>
     <color name="textBox">#EAF1EA</color>
+    <color name="quit">#eeeeee</color>
 </resources>
